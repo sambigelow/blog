@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta property="og:title" content="Sam Bigelow" />
+    <meta property="og:type" content="Personal Blog" />
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="" />
+
+    <link rel="manifest" href="site.webmanifest" />
+    <link rel="apple-touch-icon" href="icon.png" />
+    <!-- Place favicon.ico in the root directory -->
+
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <title>Eleventy Blog</title>
+  </head>
+  <body>
+    <header>
+    <h1>
+      {% if page.url != "/" %}
+        <a href="/">Sam Bigelow</a>
+      {% else %}
+        Sam Bigelow
+      {% endif %}
+    </h1></header>
+    <main>{{ content | safe }}</main>
+    <footer>Site Footer</footer>
+  </body>
+</html>
