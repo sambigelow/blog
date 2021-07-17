@@ -13,8 +13,11 @@ pagination:
     <a href="{{ post.url | url }}">{{ post.data.title }}</a>
   </h1>
   {% excerpt post %}
+  <br />
   <time datetime="{{ post.date | dateIso }}">
     {{ post.date | dateReadable }}
   </time>
 </article>
 {% endfor %}
+<br />
+<a href="/blogs-i-want-to-write">Blogs I Want To Write</a>

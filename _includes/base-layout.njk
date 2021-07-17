@@ -17,18 +17,24 @@
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/style.css" />
 
-    <title>Eleventy Blog</title>
+    <title>Sam Bigelow</title>
   </head>
   <body>
     <header>
-    <h1>
-      {% if page.url != "/" %}
-        <a href="/">Sam Bigelow</a>
+      {% if page.url == "/" %}
+        <h1>Sam Bigelow</h1>
       {% else %}
-        Sam Bigelow
+        <h2>
+          <a href="/">Sam Bigelow</a>
+        </h2>
       {% endif %}
-    </h1></header>
+      </h1>
+      <p>I make things!</p>
+      <nav>
+        <a href="/todos">Todos</a>
+        <a href="/about">About</a>
+      </nav>
+    </header>
     <main>{{ content | safe }}</main>
-    <footer>Site Footer</footer>
   </body>
 </html>
