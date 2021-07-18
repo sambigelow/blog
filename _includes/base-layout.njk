@@ -1,40 +1,20 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <meta property="og:title" content="Sam Bigelow" />
-    <meta property="og:type" content="Personal Blog" />
-    <meta property="og:url" content="" />
-    <meta property="og:image" content="" />
-
-    <link rel="manifest" href="site.webmanifest" />
-    <link rel="apple-touch-icon" href="icon.png" />
-    <!-- Place favicon.ico in the root directory -->
-
-    <link rel="stylesheet" href="css/normalize.css" />
-    <link rel="stylesheet" href="css/main.css" />
-    <link rel="stylesheet" href="css/style.css" />
-
-    <title>Sam Bigelow</title>
-  </head>
-  <body>
-    <header>
-      {% if page.url == "/" %}
-        <h1>Sam Bigelow</h1>
-      {% else %}
-        <h2>
-          <a href="/">Sam Bigelow</a>
-        </h2>
-      {% endif %}
-      </h1>
-      <p>I make things!</p>
-      <nav>
-        <a href="/todos">Todos</a>
-        <a href="/about">About</a>
-      </nav>
-    </header>
-    <main>{{ content | safe }}</main>
-  </body>
-</html>
+---
+layout: head.njk
+nav_links:
+  - name: "Home"
+    url: "/"
+  - name: "Todos"
+    url: "/todos/"
+  - name: "About"
+    url: "/about/"
+---
+<nav>
+	{% for link in nav_links %}
+		{% if link.url == page.url %}
+			{{ link.name }}
+		{% else %}
+			<a href="{{ link.url }}">{{ link.name }}</a>
+		{% endif %}
+	{% endfor %}
+</nav>
+<main>{{ content | safe }}</main>

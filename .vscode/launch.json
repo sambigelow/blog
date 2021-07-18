@@ -1,14 +1,14 @@
 {
-	// Use IntelliSense to learn about possible attributes.
-	// Hover to view descriptions of existing attributes.
-	// For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
-	"version": "0.2.0",
-	"configurations": [
-		{
-			"type": "pwa-chrome",
-			"request": "launch",
-			"name": "Open base-layout.njk",
-			"file": "/Users/sambigelow/workspace/blog/_includes/base-layout.njk"
-		}
-	]
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "command": "npm run serve",
+      "name": "Start Dev Server",
+      "request": "launch",
+      "type": "node-terminal"
+    }
+  ]
 }
