@@ -11,10 +11,10 @@ nav_links:
 <nav>
 	{% for link in nav_links %}
 		{% if link.url == page.url %}
-			{{ link.name }}
+			<span>{{ link.name }}</span>
 		{% else %}
 			<a href="{{ link.url }}">{{ link.name }}</a>
 		{% endif %}
 	{% endfor %}
 </nav>
-<main>{{ content | safe }}</main>
+{{ content | safe }}

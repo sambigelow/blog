@@ -15,7 +15,9 @@
 
     <link rel="stylesheet" href="/css/normalize.css" />
     <link rel="stylesheet" href="/css/styles.css" />
-    
+    {% for stylesheet in stylesheets %}
+      <link rel="stylesheet" href="css/{{ stylesheet }}" />
+    {% endfor %}
 
     <title>Sam Bigelow{% if title %} | {{ title }}{% endif %}</title>
   </head>

@@ -1,0 +1,18 @@
+header > h1 {
+  margin-block-end: 0;
+  line-height: 1.1;
+  letter-spacing: -0.05rem;
+}
+
+header > p {
+  margin: 0;
+  line-height: 1.05;
+}
+
+main {
+  margin-block-start: 2rem;
+}
+
+article + article {
+  margin-block-start: 4rem;
+}

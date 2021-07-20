@@ -1,22 +1,96 @@
 @import url('https://fonts.googleapis.com/css?family=Quicksand:400,500,600,700&display=swap');
 
 :root {
-  --purple-100: hsl(300, 10, 99);
-  --purple-200: hsl(300, 10, 85);
-  --purple-300: hsl(300, 10, 73);
-  --purple-400: hsl(300, 10, 61);
-  --purple-500: hsl(300, 10, 50);
-  --purple-600: hsl(300, 10, 43);
-  --purple-700: hsl(300, 10, 35);
-  --purple-800: hsl(300, 10, 26);
-  --purple-900: hsl(300, 10, 14);
+  --purple-100: hsl(300, 10%, 93%);
+  --purple-200: hsl(300, 10%, 85%);
+  --purple-300: hsl(300, 10%, 73%);
+  --purple-400: hsl(300, 10%, 61%);
+  --purple-500: hsl(300, 10%, 50%);
+  --purple-600: hsl(300, 10%, 43%);
+  --purple-700: hsl(300, 10%, 35%);
+  --purple-800: hsl(300, 10%, 26%);
+  --purple-900: hsl(300, 10%, 16%);
+
+  --container-max-width: 60ch;
+}
+
+* {
+  box-sizing: border-box;
 }
 
 body {
   font-family: Quicksand, sans-serif;
+  color: var(--purple-900);
+  background-color: var(--purple-100);
+  line-height: 1.5;
+}
+
+main {
+  margin: 0 auto;
+  max-width: 60ch;
 }
 
 .container {
+  max-width: var(--container-max-width);
   margin: 0 auto;
-  max-width: 60ch;
+}
+
+nav {
+  padding: 1.25rem 0;
+}
+
+nav * + * {
+  padding-left: 1.5rem;
+}
+
+blockquote {
+  color: var(--purple-700);
+  border-left: 0.5rem solid var(--purple-500);
+  background-color: var(--purple-200);
+  border-radius: 0.25rem;
+  margin: 0;
+  padding: 1.25rem;
+  box-shadow: -0.125rem 0.125rem 0.5rem 0 var(--purple-300);
+}
+
+input,
+textarea {
+  border-radius: 0.5rem;
+  padding: 0.75rem 1rem;
+  width: 100%;
+  border: 2px var(--purple-800) solid;
+}
+
+input:focus,
+textarea:focus {
+  -moz-outline-radius: 0.5rem;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+h5 {
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+h6 {
+  font-size: 1rem;
+  font-weight: 100;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+}
+
+a {
+  /* TODO: Style links */
+  color: var(--purple-700);
 }

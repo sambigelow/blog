@@ -5,26 +5,29 @@ pagination:
   size: 10
   reverse: true
   alias: posts
+stylesheets: ['index.css']
 ---
-
-<header>
-  <h1>Sam Bigelow</h1>
-  <p>I make things!</p>
-</header>
-
-{% for post in posts %}
-<article>
+<div class="container">
   <header>
-    <h1>
-      <a href="{{ post.url | url }}">{{ post.data.title }}</a>
-    </h1>
-    <time datetime="{{ post.date | dateIso }}">
-      {{ post.date | dateReadable }}
-    </time>
+    <h1>Sam Bigelow</h1>
+    <p>I make things!</p>
   </header>
+
+  <main>
+    {% for post in posts %}
+      <article>
+        <header>
+          <h1>
+            <a href="{{ post.url | url }}">{{ post.data.title }}</a>
+          </h1>
+          <time datetime="{{ post.date | dateIso }}">
+            {{ post.date | dateReadable }}
+          </time>
+        </header>
+        {% excerpt post %}
+      </article>
+    {% endfor %}
+  </main>
   <br />
-  {% excerpt post %}
-</article>
-{% endfor %}
-<br />
-<a href="/blogs-i-want-to-write">Blogs I Want To Write</a>
+  <a href="/blogs-i-want-to-write">Blog Post Ideas</a>
+</div>
