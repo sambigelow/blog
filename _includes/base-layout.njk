@@ -8,13 +8,26 @@ nav_links:
   - name: "About"
     url: "/about/"
 ---
-<nav>
-	{% for link in nav_links %}
-		{% if link.url == page.url %}
-			<span>{{ link.name }}</span>
-		{% else %}
-			<a href="{{ link.url }}">{{ link.name }}</a>
-		{% endif %}
-	{% endfor %}
-</nav>
-{{ content | safe }}
+
+<div class="nav-container">
+	<div class="container">
+		<nav>
+			<h2>Sam Bigelow</h2>
+			<ul>
+				{% for link in nav_links %}
+					<li>
+						{% if link.url == page.url %}
+							<span>{{ link.name }}</span>
+						{% else %}
+
+							<a href="{{ link.url }}">{{ link.name }}</a>
+						{% endif %}
+					</li>
+				{% endfor %}
+			</ul>
+		</nav>
+	</div>
+</div>
+<div class="container">
+	{{ content | safe }}
+</div>

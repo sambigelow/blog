@@ -1,6 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Quicksand:400,500,600,700&display=swap');
 
 :root {
+  /*
+  * Variables
+  */
+
+  /* Colors */
   --purple-100: hsl(300, 10%, 93%);
   --purple-200: hsl(300, 10%, 85%);
   --purple-300: hsl(300, 10%, 73%);
@@ -11,7 +16,14 @@
   --purple-800: hsl(300, 10%, 26%);
   --purple-900: hsl(300, 10%, 16%);
 
+  /* Typography */
+
+  /* Spacing */
   --container-max-width: 60ch;
+
+  /* Other */
+  --box-shadow-sm: -0.125rem 0.125rem 0.5rem 0 var(--purple-300);
+  --box-shadow-md: -0.25rem 0.25rem 0.75rem 0 var(--purple-300);
 }
 
 * {
@@ -22,24 +34,57 @@ body {
   font-family: Quicksand, sans-serif;
   color: var(--purple-900);
   background-color: var(--purple-100);
-  line-height: 1.5;
-}
-
-main {
-  margin: 0 auto;
-  max-width: 60ch;
+  padding-block-end: 8rem;
+  line-height: 1.75;
 }
 
 .container {
-  max-width: var(--container-max-width);
+  padding: 0 1.5rem;
   margin: 0 auto;
+  max-width: 65ch;
+}
+
+.nav-container {
+  background-color: var(--purple-800);
+  color: var(--purple-100);
+  box-shadow: var(--box-shadow-sm);
+  padding-top: 0.75rem;
+  padding-bottom: 3rem;
+  clip-path: polygon(0 0, 100% 0, 100% 40%, 0 100%);
+  margin-block-end: 1.5rem;
+  font-weight: 600;
 }
 
 nav {
-  padding: 1.25rem 0;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
-nav * + * {
+nav a {
+  color: white;
+}
+
+nav span {
+  color: var(--purple-300);
+}
+
+nav h2 {
+  margin-block-end: 0;
+}
+
+nav ul {
+  display: inline;
+  list-style-type: none;
+  padding: 0;
+}
+
+nav li {
+  display: inline;
+}
+
+nav ul > * + * {
   padding-left: 1.5rem;
 }
 
@@ -50,7 +95,7 @@ blockquote {
   border-radius: 0.25rem;
   margin: 0;
   padding: 1.25rem;
-  box-shadow: -0.125rem 0.125rem 0.5rem 0 var(--purple-300);
+  box-shadow: var(--box-shadow-sm);
 }
 
 input,
@@ -63,6 +108,8 @@ textarea {
 
 input:focus,
 textarea:focus {
+  /* It'd really be nice if the focus could have a border radius like the input
+  does. I'm curious what's preventing this. */
   -moz-outline-radius: 0.5rem;
 }
 
@@ -92,5 +139,5 @@ h6 {
 
 a {
   /* TODO: Style links */
-  color: var(--purple-700);
+  color: blue;
 }

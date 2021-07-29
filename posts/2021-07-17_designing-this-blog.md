@@ -1,8 +1,8 @@
 ---
-layout: base-layout.njk
+layout: post.njk
 title: Designing This Blog
 date: 2021-07-17t7:45:00-4:00
-tags: ['post', 'blog']
+tags: ['post', 'meta']
 ---
 
 # Designing This Blog
@@ -44,21 +44,21 @@ to more people down the road. And I think to do that,
 So I don't necessarily know who I am trying to be helpful to, but essentially it
 is people like me. Or maybe just me, but yesterday? Or maybe even me, but today
 or tomorrow! For example, today I am writing this so I have something to go off
-of as I build my
-["fat marker sketches"](https://basecamp.com/shapeup/1.3-chapter-04#fat-marker-sketches)\*
-So what would I want this to look like if I were looking for help designing my
-site today? That is probably the person I'm designing this for the most. It is
-one of the reasons I'm writing several posts, because consistency provides
-credibility. It allows the reader to learn more about the author's thoughts and
-opinions and determine if they align with their own as well as if their goals
-align. It helps them determine if the content is worth reading. I would want to
-know who the author is and what they do. Are they a designer, a developer, a
-product manager, or something else? How long have they worked in the field? What
-is their background? What do they like about the web? What else have they done?
-What is their day job? I probably don't need to know all of that information at
-first - so it is worth narrowing that list of questions down a bit, and maybe
-answering more in some sort of "About" page. but a really quick elevator pitch
-would be helpful on the home page.
+of as I build my <span id="footnote-back-1">
+["fat marker sketches"](https://basecamp.com/shapeup/1.3-chapter-04#fat-marker-sketches)
+</span><sup><a href="#footnote-1">[1]</a></sup> So what would I want this to
+look like if I were looking for help designing my site today? That is probably
+the person I'm designing this for the most. It is one of the reasons I'm writing
+several posts, because consistency provides credibility. It allows the reader to
+learn more about the author's thoughts and opinions and determine if they align
+with their own as well as if their goals align. It helps them determine if the
+content is worth reading. I would want to know who the author is and what they
+do. Are they a designer, a developer, a product manager, or something else? How
+long have they worked in the field? What is their background? What do they like
+about the web? What else have they done? What is their day job? I probably don't
+need to know all of that information at first - so it is worth narrowing that
+list of questions down a bit, and maybe answering more in some sort of "About"
+page. but a really quick elevator pitch would be helpful on the home page.
 
 On the home page, I'd want to see a list of posts. What else is this person
 writing? This is a blog, after all. The home page is just a list of posts.
@@ -72,6 +72,25 @@ about a lot. Is there a better way to organize the links than just inline? Maybe
 I can do them inline, but let readers know ahead of time that they will all be
 included in some sort of index at the end.
 
-\* I don't love quoting basecamp at this point considering all of the turmoil
-and prejudice going on there. They do have a lot of good ideas though and it
-definitely has influenced the way I think about software and my career.
+## What is in a design?
+
+I created the "Kitchen Sink" but even that is not truly a kitchen sink. My site
+already has something that complicates it with an `a` tag inside of an `h2` tag.
+How should those be styled?
+
+I also have **a ton** of thinking still to do about color. At the point of
+writing this, I'm doing it in 9 shades of purple (plus `white`). But I need to
+do some more thinking about accent colors and how that will affect links, how
+that will affect the header, etc. Do I want to throw in any more colors, how
+many?
+
+Also, a part of the design, do I want to have some sort of logo? The answer is
+obviously yes, but can I make one? I love [Dave Rupert's](daverupert.com) top
+left corner logo as well as the illustration of his D&D character.
+
+<small id="footnote-1">
+  <sup><a href="#footnote-back-1">[1]</a></sup> I don't love quoting basecamp at
+  this point considering all of the turmoil and prejudice going on there. They
+  do have a lot of good ideas though and it definitely has influenced the way I
+  think about software and my career.
+</small>

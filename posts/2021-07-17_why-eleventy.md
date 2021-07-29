@@ -1,9 +1,11 @@
 ---
-layout: base-layout.njk
+layout: post.njk
 title: Why Eleventy?
 date: 2021-07-17T07:00:00-4:00
-tags: ['post', 'blog']
+tags: ['post', 'meta']
 ---
+
+# Why Eleventy?
 
 <!-- Excerpt Start -->
 

@@ -1,8 +1,8 @@
 ---
-layout: base-layout.njk
+layout: post.njk
 title: Hello, World!
 date: 2021-07-15
-tags: ['post']
+tags: ['post', 'meta']
 ---
 
 # Hello, World!

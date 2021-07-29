@@ -7,27 +7,26 @@ pagination:
   alias: posts
 stylesheets: ['index.css']
 ---
-<div class="container">
-  <header>
-    <h1>Sam Bigelow</h1>
-    <p>I make things!</p>
-  </header>
+<header>
+  <h1>I make websites!</h1>
+</header>
 
-  <main>
-    {% for post in posts %}
-      <article>
-        <header>
-          <h1>
-            <a href="{{ post.url | url }}">{{ post.data.title }}</a>
-          </h1>
-          <time datetime="{{ post.date | dateIso }}">
-            {{ post.date | dateReadable }}
-          </time>
-        </header>
-        {% excerpt post %}
-      </article>
-    {% endfor %}
-  </main>
-  <br />
+<main>
+  {% for post in posts %}
+    <article>
+      <header>
+        <h2>
+          <a href="{{ post.url | url }}">{{ post.data.title }}</a>
+        </h2>
+        <time datetime="{{ post.date | dateIso }}">
+          {{ post.date | dateReadable }}
+        </time>
+      </header>
+      {% excerpt post %}
+    </article>
+  {% endfor %}
+</main>
+<br />
+<aside>
   <a href="/blogs-i-want-to-write">Blog Post Ideas</a>
-</div>
+</aside>

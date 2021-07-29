@@ -3,17 +3,19 @@ const moment = require('moment')
 moment.locale('en')
 
 module.exports = function config(eleventyConfig) {
+  /**
+   * * Eleventy "Filters" *
+   * These are used within templates (i.e. { date | dateIso } calls moment(date).toISOString())
+   */
   eleventyConfig.addFilter('dateIso', (date) => moment(date).toISOString())
-
   eleventyConfig.addFilter('dateReadable', (date) =>
     moment(date).utc().format('LL')
   )
 
-  global.filters = eleventyConfig.javascriptFunctions
-  eleventyConfig.setPugOptions({
-    globals: ['filters'],
-  })
-
+  /**
+   * * Eleventy Shortcodes *
+   *
+   */
   eleventyConfig.addShortcode('excerpt', (article) => extractExcerpt(article))
   eleventyConfig.addPassthroughCopy('css')
 }
