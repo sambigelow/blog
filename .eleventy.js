@@ -3,9 +3,13 @@ const moment = require('moment')
 moment.locale('en')
 
 module.exports = function config(eleventyConfig) {
+  eleventyConfig.addPassthroughCopy('src/css')
+  eleventyConfig.addWatchTarget('src/css')
+
   /**
-   * * Eleventy "Filters" *
-   * These are used within templates (i.e. { date | dateIso } calls moment(date).toISOString())
+   * Eleventy "Filters"
+   *
+   * https://www.11ty.dev/docs/filters/
    */
   eleventyConfig.addFilter('dateIso', (date) => moment(date).toISOString())
   eleventyConfig.addFilter('dateReadable', (date) =>
@@ -13,11 +17,15 @@ module.exports = function config(eleventyConfig) {
   )
 
   /**
-   * * Eleventy Shortcodes *
-   *
+   * Eleventy Shortcodes
    */
   eleventyConfig.addShortcode('excerpt', (article) => extractExcerpt(article))
-  eleventyConfig.addPassthroughCopy('css')
+
+  return {
+    dir: {
+      input: 'src',
+    },
+  }
 }
 
 function extractExcerpt(article) {

@@ -1,5 +1,5 @@
 ---
-layout: base-layout.njk
+layout: base.njk
 ---
 
 # Blog Posts I Want To Write
@@ -22,9 +22,9 @@ layout: base-layout.njk
 
 ## Some Possible Link Posts
 
-First of all, I'm still kind of figuring out what this means. Chris Coyier seems
-to use it a lot on Shoptalk show and I think the idea is basically just writing
-some stuff about an article or blog post or whatever I read. One I'd really like
-to do this on is a talk that Dave Rupert mentioned in some episode of the
-podcast about how SVG tags work... but I can't remember what it is. Another is a
-podcast episode from "Focus on Code" with Jeremy Keith. That thing blew me away
+- [Cracking The SVG Code](https://brendastorer.com/presentations/2016-01-svgsummit/#intro).
+  This unfortunately has no video -
+  [I asked on twitter](https://twitter.com/sambigelow/status/1422167442533621761)
+  but Brenda has shared the slides.
+- [Effortless Style](https://twitter.com/sambigelow/status/1422167442533621761)
+- Focus On Code podcasat where he interviewed Jeremy Keith

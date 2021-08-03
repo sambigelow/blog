@@ -1,0 +1,58 @@
+/** I'm not using this right now, but i already collected these palettes */
+:root {
+  /** Colors */
+  --purple-4: hsl(300, 10%, 93%);
+  --purple-3: hsl(300, 10%, 85%);
+  --purple-2: hsl(300, 10%, 73%);
+  --purple-1: hsl(300, 10%, 61%);
+  --purple0: hsl(300, 10%, 50%);
+  --purple1: hsl(300, 10%, 43%);
+  --purple1: hsl(300, 10%, 35%);
+  --purple2: hsl(300, 10%, 26%);
+  --purple3: hsl(300, 10%, 16%);
+
+  --green-lightest: hsl(79, 43%, 85%);
+  --green-lighter: hsl(80, 37%, 76%);
+  --green-light: hsl(81, 38%, 64%);
+  --green-main: hsl(81, 38%, 51%);
+  --green-dark: hsl(83, 35%, 42%);
+  --green-darker: hsl(86, 33%, 33%);
+  --green-darkest: hsl(111, 21%, 20%);
+
+  --grey-lightest: hsl(158, 100%, 98%);
+  --grey-lighter: hsl(158, 7%, 75%);
+  --grey-light: hsl(158, 5%, 65%);
+  --grey-main: hsl(154, 3%, 55%);
+  --grey-dark: hsl(164, 4%, 34%);
+  --grey-darker: hsl(163, 6%, 21%);
+  --grey-darkest: hsl(171, 12%, 11%);
+
+  --brown-2: hsl(26, 35%, 83%)
+  --brown-1: hsl(27, 34%, 64%)
+  --brown0: hsl(27, 37%, 48%)
+  --brown1: hsl(26, 38%, 25%)
+  --brown2: hsl(27, 38%, 18%)
+
+  --red-4: hsl(0, 100%, 96%);
+  --red-3: hsl(9, 88%, 90%);
+  --red-2: hsl(0, 86%, 83%);
+  --red-1: hsl(0, 100%, 72%);
+  --red0: hsl(0, 96%, 60%);
+  --red1: hsl(0, 91%, 18%);
+  --red2: hsl(0, 87%, 9%);
+
+  --yellow-3: hsl(53, 100%, 95%);
+  --yellow-2: hsl(52, 61%, 67%);
+  --yellow-1: hsl(52, 60%, 58%);
+  --yellow0: hsl(49, 66%, 45%);
+  --yellow1: hsl(47, 78%, 38%);
+  --yellow2: hsl(47, 95%, 29%);
+
+  --green-3: hsl(117, 100%, 96%);
+  --green-2: hsl(113, 88%, 90%);
+  --green-1: hsl(115, 86%, 83%);
+  --green0: hsl(127, 40%, 67%);
+  --green1: hsl(135, 29%, 50%);
+  --green2: hsl(140, 40%, 24%);
+  --green3: hsl(146, 80%, 10%);
+}

@@ -1,0 +1,203 @@
+:root {
+  /** Colors */
+  --purple-4: hsl(300, 10%, 93%);
+  --purple-3: hsl(300, 10%, 85%);
+  --purple-2: hsl(300, 10%, 73%);
+  --purple-1: hsl(300, 10%, 61%);
+  --purple0: hsl(300, 10%, 50%);
+  --purple1: hsl(300, 10%, 43%);
+  --purple1: hsl(300, 10%, 35%);
+  --purple2: hsl(300, 10%, 26%);
+  --purple3: hsl(300, 10%, 16%);
+
+  --green-lightest: hsl(79, 43%, 85%);
+  --green-lighter: hsl(80, 37%, 76%);
+  --green-light: hsl(81, 38%, 64%);
+  --green-main: hsl(81, 38%, 51%);
+  --green-dark: hsl(83, 35%, 42%);
+  --green-darker: hsl(86, 33%, 33%);
+  --green-darkest: hsl(111, 21%, 20%);
+
+  --grey-lightest: hsl(158, 100%, 98%);
+  --grey-lighter: hsl(158, 7%, 75%);
+  --grey-light: hsl(158, 5%, 65%);
+  --grey-main: hsl(154, 3%, 55%);
+  --grey-dark: hsl(164, 4%, 34%);
+  --grey-darker: hsl(163, 6%, 21%);
+  --grey-darkest: hsl(171, 12%, 11%);
+
+  --brown-2: hsl(26, 35%, 83%)
+  --brown-1: hsl(27, 34%, 64%)
+  --brown0: hsl(27, 37%, 48%)
+  --brown1: hsl(26, 38%, 25%)
+  --brown2: hsl(27, 38%, 18%)
+
+  --red-4: hsl(0, 100%, 96%);
+  --red-3: hsl(9, 88%, 90%);
+  --red-2: hsl(0, 86%, 83%);
+  --red-1: hsl(0, 100%, 72%);
+  --red0: hsl(0, 96%, 60%);
+  --red1: hsl(0, 91%, 18%);
+  --red2: hsl(0, 87%, 9%);
+
+  --yellow-3: hsl(53, 100%, 95%);
+  --yellow-2: hsl(52, 61%, 67%);
+  --yellow-1: hsl(52, 60%, 58%);
+  --yellow0: hsl(49, 66%, 45%);
+  --yellow1: hsl(47, 78%, 38%);
+  --yellow2: hsl(47, 95%, 29%);
+
+  --green-3: hsl(117, 100%, 96%);
+  --green-2: hsl(113, 88%, 90%);
+  --green-1: hsl(115, 86%, 83%);
+  --green0: hsl(127, 40%, 67%);
+  --green1: hsl(135, 29%, 50%);
+  --green2: hsl(140, 40%, 24%);
+  --green3: hsl(146, 80%, 10%);
+}
+
+:root {
+  --ratio: 1.25;
+  --scale-root: 1rem;
+
+  --scale-down-1: calc(var(--scale-root) / var(--ratio));
+  --scale-down-2: calc(var(--scale-down-1) / var(--ratio));
+  --scale-down-3: calc(var(--scale-down-2) / var(--ratio));
+  --scale-down-4: calc(var(--scale-down-3) / var(--ratio));
+  --scale-down-5: calc(var(--scale-down-4) / var(--ratio));
+
+  --scale-up-1: calc(var(--scale-root) * var(--ratio));
+  --scale-up-2: calc(var(--scale-up-1) * var(--ratio));
+  --scale-up-3: calc(var(--scale-up-2) * var(--ratio));
+  --scale-up-4: calc(var(--scale-up-3) * var(--ratio));
+  --scale-up-5: calc(var(--scale-up-4) * var(--ratio));
+
+  --line-width: 80ch;
+}
+
+body {
+  line-height: var(--scale-up-2);
+  font-family: Bitter, serif;
+  font-weight: 400;
+  background-color: papayawhip;
+  color: darkslategrey;
+  margin-bottom: 6rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Work Sans', serif;
+  font-weight: 600;
+  line-height: 1.3;
+  overflow-wrap: normal;
+  color: steelblue;
+}
+
+h1 {
+  font-size: var(--scale-up-5);
+}
+
+h2 {
+  font-size: var(--scale-up-4);
+}
+
+h3 {
+  font-size: var(--scale-up-3);
+}
+
+h4 {
+  font-size: var(--scale-up-2);
+}
+
+h5 {
+  font-size: var(--scale-up-1);
+}
+
+h6 {
+  font-size: var(--scale-root);
+}
+
+p,
+li {
+  max-width: var(--line-width);
+  margin-top: 0;
+  font-family: Bitter, serif;
+  overflow-wrap: break-word;
+  hyphens: auto;
+}
+
+blockquote {
+  border: 0.125rem solid black;
+  border-left: 0.75rem solid black;
+  padding: 2rem 2.5rem;
+  margin-bottom: var(--scale-up-2);
+  margin-left: 0;
+  margin-right: 0;
+
+  font-weight: bold;
+  max-width: var(--line-width);
+}
+
+pre {
+  background-color: rgb(230, 230, 230);
+  border: 0.125rem solid black;
+  border-left: 0.75rem solid black;
+  padding-inline-start: var(--scale-up-2);
+  padding-block: var(--scale-up-1);
+  line-height: 1.25;
+  max-width: var(--line-width);
+  overflow-x: scroll;
+}
+
+blockquote *:last-child {
+  margin-bottom: 0;
+}
+
+.content {
+  max-width: calc(var(--line-width) + 10ch);
+  margin-left: auto;
+  margin-right: auto;
+  padding: 2rem 1rem 0;
+}
+
+@media screen and (min-width: 400px) {
+  :root {
+    --ratio: 1.3;
+  }
+}
+
+@media screen and (min-width: 650px) {
+  :root {
+    --ratio: 1.4;
+  }
+}
+
+a {
+  color: darkslategrey;
+}
+
+a:visited {
+  color: darkblue;
+}
+
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+  color: steelblue;
+}
+
+h1 a:visited,
+h2 a:visited,
+h3 a:visited,
+h4 a:visited,
+h5 a:visited,
+h6 a:visited {
+  color: rgb(47, 86, 119);
+}
